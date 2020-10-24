@@ -1,0 +1,28 @@
+<!-- This is the root page-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Jasoos</title>
+	<link rel="icon" href="./sun.png">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css"> <!-- All the addresses are w.r.t the public directory bcz that is the one we shared-->
+	
+</head>
+<body>
+	<!-- We gonna use flex box to make our footer to stick at the bottom of the page, to do that we keep all the contents except footer in a div. For detailed info check the styles.css file-->
+	<div class="main-content">
+		{{>header}}
+		<p>This is where the forecasting is done. Let's see.</p>
+		<form>
+			<input placeholder="e.g. Haryana, India">
+			<button>Search</button>
+		</form>
+		<!-- Result of the search goes here-->
+		<p id="message-1"></p>
+		<p id="message-2"></p>
+	</div>
+	
+	{{>footer}}
+	
+	<script src="/js/app.js"></script> <!-- script is brought here from the head because it uses some body elements, therefore it must be loaded after they are defined-->
+</body>
+</html>

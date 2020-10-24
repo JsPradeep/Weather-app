@@ -1,0 +1,85 @@
+body{
+	font-family: Arial, Helvetica, sans-serif; 
+	background-color:azure;
+	max-width: 850px; /* Tells the max-width that the body can have*/
+	margin: 0 auto;
+
+	display: flex; /* Enabling flex */
+	flex-direction: column; /*By default set to row, which is not what we want, we want our elements to be in a column*/
+	min-height: 100vh; /* It sets where the footer should be present, */
+}
+.main-content{
+	flex-grow: 1; /* This determines how much the element should grow. We set it to 1 for our main-content to grow as much as it wants*/
+}
+footer{
+	color: #888888;
+	border-top: #e4dada solid 1px;
+	padding: 10px 0px;
+	margin: 20px 0px;
+}
+
+header {
+	margin: 16px 0px 48px 0px;
+}
+header h1{
+	color: #333333;
+	font-size: 64px;
+}
+
+/* Navigation Bar*/
+.button{
+	background-color:  rgb(158, 121, 121);
+	/* border:3px solid rgb(80, 78, 78);*/
+	border-radius: 5px;
+	color:white;
+	padding: 6px 12px;
+	text-align: center;
+	line-height: 28px;
+	box-sizing: border-box;
+	margin-right: 20px;
+	box-sizing: border-box;/*This gives a nice box effect to the element. Answer to this question lies in future videos*/
+}
+
+ul{
+	list-style-type:none;
+	margin:0px;
+	padding:6px;
+	border-radius: 3px;
+	background-color: rgb(158, 121, 121);
+}
+
+ul li{
+	display:inline-block; /* Optional, as per choice.*/
+}
+ul li a{
+	text-decoration:none;
+	color:#dadada;
+
+}
+ul li a:hover{
+	background-color: lightgrey;
+	color:black;
+}
+form input{
+	padding: 7px; 
+	border: 2px solid  rgb(54, 51, 51);
+	border-radius: 3px;
+	font-size: 0.95em;
+}
+form input:click{
+	border: 2px solid black;
+}
+form button{
+	cursor: pointer;
+	border: 2px solid rgb(54, 51, 51);
+	border-radius: 3px;
+	padding: 7px 9px;
+	background: rgb(50, 50, 99);
+	color: white;
+	font-size: 0.95em;
+}
+form button:hover{
+	background: rgb(176, 176, 184);
+	color: black;
+	border: 2px solid black;
+}
