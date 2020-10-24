@@ -1,4 +1,4 @@
-// Modules loading
+// Modules Loading
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs'); // To create partials we need to load hbs
