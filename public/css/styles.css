@@ -25,7 +25,15 @@ header h1{
 	color: #333333;
 	font-size: 64px;
 }
-
+/* Forecast section, this element is not present untill you press search. It contains the forecast info weatherConditionIcon, and weather message */
+.forecastMessage{
+	border-top: 1px solid rgb(158, 121, 121);
+	border-left: 1px solid rgb(158, 121, 121);
+	border-right: 1px solid rgb(158, 121, 121);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	vertical-align: middle;
+}
 /* Navigation Bar*/
 .button{
 	background-color:  rgb(158, 121, 121);

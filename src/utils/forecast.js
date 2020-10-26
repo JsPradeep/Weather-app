@@ -16,8 +16,10 @@ const forecast = (address, callback)=>{
 		}
 		// If everything is OK return the forecast
 		else{
-			const message = 'Weather condition will be ' + body.current.condition.text + ' today, with average temperature of ' + body.forecast.forecastday[0].day.avgtemp_c + " degrees. It is currently " + body.current.temp_c + ' degrees out and there is ' + body.forecast.forecastday[0].day.daily_chance_of_rain + '% chance of rain.'
-			callback(undefined, message);
+			const message1 = 'Weather condition will be ' + body.current.condition.text + ' today, with average temperature of ' + body.forecast.forecastday[0].day.avgtemp_c + " degrees."
+			const message2 = "It is currently " + body.current.temp_c + ' degrees out but feels like ' + body.current.feelslike_c + ' degrees and there is ' + body.forecast.forecastday[0].day.daily_chance_of_rain + '% chance of rain.';
+			const iconConditionLink = body.current.condition.icon;
+			callback(undefined, {message1,message2,iconConditionLink});
 		}
 	});
 };
