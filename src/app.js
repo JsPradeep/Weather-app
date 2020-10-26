@@ -8,6 +8,9 @@ const geoCode = require('./utils/geocode');
 // Applicaiton created or Server Created
 const app = express();
 
+// Deciding port
+const port = process.env.PORT || 3000;
+
 // Various Paths
 const publicDirPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates(earlier_views)/views');
@@ -89,8 +92,8 @@ app.get('*',(req,res)=>{
 });
 
 // Firing up the server
-app.listen(3000,()=>{
-	console.log('Server fired up at port 3000');
+app.listen(port,()=>{
+	console.log('Server fired up at port ' + port);
 });
 
 

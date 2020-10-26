@@ -5,7 +5,7 @@ const request = require('request');
 const forecast = (address, callback)=>{
 	const url = "http://api.weatherapi.com/v1/forecast.json?key=6b76be22abe944e6b6b92831202109&q=" + address + "&days=1";
 
-	request({url, json: true},(error, {body})=>{ 
+	request({url, json: true},(error, {body}={})=>{ 
 		// Handling lower level errors(machine based errors) like network error(internet disconnected)
 		if(error){
 			callback("Can't connect to weather service!", undefined);
