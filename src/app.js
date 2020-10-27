@@ -13,8 +13,8 @@ const port = process.env.PORT || 3000;
 
 // Various Paths
 const publicDirPath = path.join(__dirname, '../public');
-const viewsPath = path.join(__dirname, '../templates(earlier_views)/views');
-const partialPath = path.join(__dirname, '../templates(earlier_views)/partials');
+const viewsPath = path.join(__dirname, '../templates/views');
+const partialPath = path.join(__dirname, '../templates/partials');
 
 // Setup handlebars engine, views path
 app.set('view engine', 'hbs');
