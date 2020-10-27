@@ -33,6 +33,7 @@ header h1{
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	vertical-align: middle;
+	padding: 0px 20px;
 }
 /* Navigation Bar*/
 .button{
